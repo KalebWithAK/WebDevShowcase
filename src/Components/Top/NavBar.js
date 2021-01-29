@@ -9,6 +9,7 @@ export default class NavBar  extends React.Component {
             navs: [
                 { title: 'Layouts', link: '/', id: 0 },
                 { title: 'Special Content', link: '/specialContent', id: 1 },
+                { title: 'Nav Bars', link: '/navBars', id: 2 },
             ],
         };
     }
