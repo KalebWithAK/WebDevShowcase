@@ -3,7 +3,9 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import LayoutsView from '../Views/LayoutsView.js';
 import SpecialContentView from '../Views/SpecialContentView.js';
-import NavBar from '../Components/NavBar.js';
+import NavBarsView from '../Views/NavBarsView.js';
+import AboutView from '../Views/AboutView.js';
+import NavBar from '../Components/Top/NavBar.js';
 
 export default class ViewsRouter extends React.Component {
     render() {
@@ -14,9 +16,9 @@ export default class ViewsRouter extends React.Component {
 
                     <Switch>
                         <Route exact path='/'><LayoutsView /></Route>
-                    </Switch>
-                    <Switch>
                         <Route path='/specialContent'><SpecialContentView /></Route>
+                        <Route path='/navBars'><NavBarsView /></Route>
+                        <Route path='/about'><AboutView /></Route>
                     </Switch>
                 </Router>
             </div>
